@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-dic-2022 2:17:54 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Modelo.Partidos" table="partidos" catalog="parcial3er" optimistic-lock="version">
+        <id name="codigoPartido" type="java.lang.Integer">
+            <column name="codigoPartido" />
+            <generator class="identity" />
+        </id>
+        <property name="manejoEquipo1" type="string">
+            <column name="manejoEquipo1" length="40" not-null="true" />
+        </property>
+        <property name="manejoEquipo2" type="string">
+            <column name="manejoEquipo2" length="40" not-null="true" />
+        </property>
+        <property name="numGolesEquipo1" type="int">
+            <column name="numGolesEquipo1" not-null="true" />
+        </property>
+        <property name="numGolesEquipo2" type="int">
+            <column name="numGolesEquipo2" not-null="true" />
+        </property>
+        <property name="numAmarillasEquipo1" type="int">
+            <column name="numAmarillasEquipo1" not-null="true" />
+        </property>
+        <property name="numAmarillasEquipo2" type="int">
+            <column name="numAmarillasEquipo2" not-null="true" />
+        </property>
+        <property name="numRojasEquipo1" type="int">
+            <column name="numRojasEquipo1" not-null="true" />
+        </property>
+        <property name="numRojasEquipo2" type="int">
+            <column name="numRojasEquipo2" not-null="true" />
+        </property>
+        <property name="cierre" type="int">
+            <column name="cierre" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
